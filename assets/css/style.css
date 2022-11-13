@@ -135,7 +135,7 @@ img {
     margin-left: 80px;
 }
 
-.my-skills {
+.my-skills, .formulario {
     width: 80%;
     max-width: 100%;
     padding-bottom: 50px;
@@ -233,6 +233,59 @@ img {
     100%{
         width: 70%;
     }
+}
+
+.formulario {
+    background-color: var(--blanco);
+    width: 95%;
+    padding: 0;
+    height: 70vh;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: center;
+    padding-right: 2rem;
+}
+
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.campo__field--textarea {
+    height: 20rem;
+}
+
+.boton {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--main-color);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: var(--secondary);
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+    }
+    
 }
 
 
