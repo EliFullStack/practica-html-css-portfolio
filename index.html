@@ -97,32 +97,44 @@
         </div>
     </section>
     <section class="contact-me" id="contact-me">
+        <div>
         <h2>Contact me</h2>
         <form class="formulario">
+            <div class="camps">
             <div class="campo">
                 <label class="campo__label" for="name" >Name</label>
                 <input class="campo__field" type="text" placeholder="Your name" id="name" required>
             </div>
             <div class="campo">
-                <label class="campo__label" for="lastname">Lastname</label>
-                <input class="campo__field" type="text" placeholder="Your lastname" id="lastname" required>
+                <label class="campo__label" for="lastname">Last Name</label>
+                <input class="campo__field" type="text" placeholder="Your last name" id="lastname" required>
             </div>
             <div class="campo">
-                <label class="campo__label" for="telephone">Teléfono</label>
-                <input class="campo__field" type="number" placeholder="Your telephone number" id="telephone" required>
+                <label class="campo__label" for="phone">Teléfono</label>
+                <input class="campo__field" type="tel" placeholder="Your phone number" id="phone" required>
             </div>
             <div class="campo">
-                <label class="campo__label" for="github">Github username</label>
+                <label class="campo__label" for="github">Github username (optional)</label>
                 <input class="campo__field" type="github" placeholder="Your github" id="github" pattern="^@[^\s]+">
+            </div>
+            </div>
+        
+            <div class="container-fieldset">
+                <fieldset class="fieldset">
+                    <legend class="know-me">You know me from:</legend>
+                    <label class="radio-button"><input class="radio-button" value="niversity" type="radio" name="know-me-from" required/>University</label>
+                    <label class="radio-button"><input class="radio-button" value="keepcoding kick-off" type="radio" name="know-me-from" required/>Keepcoding kick-off</label>
+                    <label class="radio-button"><input class="radio-button" value="school" type="radio" name="know-me-from" required/>School</label>
+                    <label class="radio-button"><input class="radio-button" value="github" type="radio" name="know-me-from" required/>Github</label>
+                    <label class="more-information" for="info">More information</label>
+                    <textarea class="information" id="info" cols="20" rows="10" placeholder="Do you need more information?"></textarea>
+                </fieldset> 
             </div>
             <div class="campo">
                 <input type="submit" value="Enviar" class="boton">
             </div>
-
         </form>
-    </section>
-    <section>
-
+    </div>
     </section>
 </main>
 
