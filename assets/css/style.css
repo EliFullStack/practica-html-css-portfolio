@@ -45,6 +45,21 @@ body {
     margin: 0 auto;
 }
 
+#footer{
+    background: black;
+    height: 80px;
+    border-top: 2px solid rgba(0, 0, 0, 0.24);  
+    /*  poner footer abajo */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -123,7 +138,7 @@ img {
 
 .hero-text {
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 50px;
     line-height: 1.6;
 }
 
@@ -293,7 +308,8 @@ img {
     width: 80%;
     min-width: 100%;
     padding-top: 5px;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding-bottom: 5px;
 }
 
@@ -318,11 +334,11 @@ img {
     font-family: var(--fuenteHeading);
     color: var(--main-color);
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 0.8rem 2rem;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     border: none;
     background-color: var(--secondary);
 }
